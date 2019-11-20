@@ -3,9 +3,9 @@ language: python
 python: "2.7"
 before_install:
  - sudo apt-get update -qq
- - sudo apt-get install -qq python-pycurl
+ - sudo apt-get install -qq python-pycurl python-apt
 install:
-  - pip install ansible apt
+  - pip install ansible
   - echo -e 'localhost  ansible_connection=local' > tests/inventory
   - echo -e '[defaults]\nroles_path = ../\nhostfile = ./tests/inventory' > ansible.cfg
 script:
