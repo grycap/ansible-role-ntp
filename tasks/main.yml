@@ -12,6 +12,8 @@
 
 - name: ntpdate
   command: ntpdate {{ ntp_config_server[0] }}
+  register: ntpdate
+  changed_when: ntpdate.rc = 0
   ignore_errors: yes
 
 - name: Start/stop ntp service
