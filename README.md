@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/license-bsd-red.svg)](https://www.freebsd.org/copyright/license.html)
-[![Build Status](https://travis-ci.org/grycap/ansible-role-ntp.svg?branch=master)](https://travis-ci.org/grycap/ansible-role-ntp)
+![Build Status](https://github.com/grycap/ansible-role-ntp/workflows/CI/badge.svg)
 
 ntp
 ===
