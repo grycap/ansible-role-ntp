@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/license-bsd-red.svg)](https://www.freebsd.org/copyright/license.html)
-![Build Status](https://github.com/grycap/ansible-role-ntp/workflows/CI/badge.svg)
+[![Build Status](https://github.com/grycap/ansible-role-ntp/workflows/CI/badge.svg)](https://github.com/grycap/ansible-role-ntp/actions?query=workflow%3ACI)
 
 ntp
 ===
