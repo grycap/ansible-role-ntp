@@ -1,0 +1,8 @@
+# {{ ansible_managed }}
+
+{% for server in ntp_config_server %}
+server {{ server }}
+{% endfor %}
+
+# Record the rate at which the system clock gains/losses time.
+driftfile {{ ntp_config_driftfile }}

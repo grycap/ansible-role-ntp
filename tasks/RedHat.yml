@@ -1,3 +1,10 @@
 ---
 - name: Install the required packages in Redhat derivatives
-  yum: name=ntp state={{ ntp_pkg_state }}
+  yum: name=chrony state={{ ntp_pkg_state }}
+  
+- name: Force time update
+  command: chronyd -q 'server {{ ntp_config_server[0] }} iburst'
+  register: chronyd
+  changed_when: chronyd.rc == 0
+  ignore_errors: yes
+

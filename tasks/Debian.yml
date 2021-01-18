@@ -4,3 +4,9 @@
 
 - name: install ntpdate in debian derivatives
   apt: name=ntpdate
+
+- name: ntpdate
+  command: ntpdate {{ ntp_config_server[0] }}
+  register: ntpdate
+  changed_when: ntpdate.rc == 0
+  ignore_errors: yes
